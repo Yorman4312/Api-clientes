@@ -64,7 +64,12 @@ app.post("/clientes", (req, res) => {
 
     // Generar un ID nuevo (el siguiente al último)
     const nuevoId = clientes.length > 0 ? clientes[clientes.length - 1].id + 1 : 1;
-    const nuevoCliente = { id: nuevoId, nombre, correo, telefono };
+    const nuevoCliente = {
+        id: nuevoId,
+        nombre,
+        correo,
+        telefono
+    };
 
     clientes.push(nuevoCliente);
     res.status(201).json(nuevoCliente);

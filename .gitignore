@@ -1,4 +1,4 @@
 node_modules
-paskage.lock.json
-package.json
 .env
+paskage.lock.json
+.gitignore

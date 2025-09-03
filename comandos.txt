@@ -1,2 +1,0 @@
-cd <carpeta_proyecto>
-npm install
